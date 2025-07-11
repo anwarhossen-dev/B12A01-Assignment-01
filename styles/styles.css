@@ -1,3 +1,19 @@
+/* Use Raleway with a specific weight */
+.raleway-section2 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800; /* Example: bold weight */
+  font-style: normal;
+}
+
+.inter-stats-box {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +44,11 @@ nav a{
     font-weight: 800px;
 
 }
+.Logo:hover{
+    border: 1px solid #853232; ;
+    background: #853232;;
+   transition: 2s;
+}
 .nav-link{
     flex: 1;
     text-align: right;
@@ -49,6 +70,12 @@ nav a{
     height: 48px;
     border: #4E47FF;
     font-weight: 60px;
+}
+.nav-link ul li a button:hover{
+    
+    border: 1px solid #853232; ;
+    background: #853232;;
+   transition: 2s;
 }
 .text-box{
     width: 90%;
@@ -75,6 +102,126 @@ nav a{
     position: relative;
     cursor: pointer;
 
+}
+.hero-btn:hover{
+    
+    border: 1px solid #853232; ;
+    background: #853232;;
+   transition: 2s;
+}
+
+/* section first styles  */
+.section{
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    padding: 116px 141px 116px 141px;
+    /* padding: 80px; */
+    max-width: 1200px;
+    margin: auto;
+    background-color: Gradient;
+   
+}
+.left-title{
+   flex: 1;
+  padding-right: 30px;
+}
+.left-title h2{
+    font-size: 42px;
+    color: #252432;
+    margin-bottom: 23px;
+}
+.left-title p{
+    font-size: 24px;
+    color: #252432;
+    margin-bottom: 23px;
+}
+
+.left-title a {
+    text-decoration: none;
+}
+.preview-btn {
+  background-color:  #4E47FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-bottom: 6px;
+}
+
+.preview-btn:hover {
+  background-color: #4338ca;
+}
+.right {
+  flex: 1;
+  text-align: right;
+}
+.right img {
+  width: 100%;
+  max-width: 403px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* section second part star styles */
+.section2{
+    text-align: center;
+    background: #c5c4ee;
+    padding: 50px 141px 116px 141px;
+    margin: 0px 141px 0px 160px;
+    border-radius: 5px;
+    font-family: raleway;
+}
+.stats{
+    display: flex;
+    /* padding: 40px; */
+    gap: 158px;
+    /* text-align: center; */
+    color: #4E47FF;
+    text-align: center;
+     padding: 50px 1px 50px 1px;
+}
+.stats-box{
+  flex: 1;
+  min-width: 100px;
+  
+  
+}
+
+.stats h3{
+    font-weight:800;
+    font-size: 80px;
+    text-align: center;
+    font-family: Inter;
+   
+}
+.stats-box p {
+  font-size: 14px;
+  color: #6b7280;
+  /* margin-top: 8px; */
+}
+@keyframes stats {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-box h3 {
+  font-size: 36px;
+  color: #4f46e5;
+  margin: 0;
+  font-weight: 700;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.stat-box:nth-child h3 {
+  animation-delay: 0.40s;
 }
 
 
