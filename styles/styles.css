@@ -63,7 +63,7 @@ nav a{
     text-decoration: none;
     
 }
-.nav-link ul li a button{
+.nav-link ul li a button {
     color: white;
     background-color: #4E47FF;
     width: 100px;
@@ -169,19 +169,22 @@ nav a{
 .section2{
     text-align: center;
     background: #c5c4ee;
-    padding: 50px 141px 116px 141px;
-    margin: 0px 141px 0px 160px;
+    max-width: 1200px;
+    /* padding: 50px 141px 5px 141px; */
+    padding: 116px 141px 116px 141px;
+    margin: 0px 141px 5px 160px;
     border-radius: 5px;
     font-family: raleway;
 }
 .stats{
     display: flex;
     /* padding: 40px; */
-    gap: 158px;
+    gap: 20px;
     /* text-align: center; */
     color: #4E47FF;
-    text-align: center;
+    /* text-align: center; */
      padding: 50px 1px 50px 1px;
+     margin-bottom: 1px;
 }
 .stats-box{
   flex: 1;
@@ -193,7 +196,7 @@ nav a{
 .stats h3{
     font-weight:800;
     font-size: 80px;
-    text-align: center;
+    /* text-align: center; */
     font-family: Inter;
    
 }
@@ -202,27 +205,117 @@ nav a{
   color: #6b7280;
   /* margin-top: 8px; */
 }
-@keyframes stats {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/*  Review section styles */
+.review-title{
+   background: #FFFFFF;
+   /* padding: 40px 140px 40px 14px; */
+   font-family: 'Arial', sans-serif;
+   /* text-align: center; */
+   /* background-position: center;
+   margin: 10px 141px 10px 160px; */
+   padding: 50px 141px 116px 141px;
+}
+.review-title h2 {
+  font-size: 32px;
+  padding: 10px;
+  /* margin-bottom: 40px; */
+  color: #252432;
+  text-align: center;
 }
 
-.stat-box h3 {
-  font-size: 36px;
-  color: #4f46e5;
+.review-cards{
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 10px 20px 30px 60px;
+
+}
+.card{
+  padding: 10px 10px 10px 10px;
+  border-radius: 2px;
+  box-shadow: 10px 6px 50px 0px #000000;
+    gap: 5px;
+    
+}
+.card h4{
+  padding: 10px;
+  
+}
+.card p{
+  padding: 10px;
+}
+
+
+
+
+
+.sub-card{
+  display: flex;
+  
+  
+}
+.sub-card ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-weight: 700;
-  animation: fadeInUp 0.8s ease-out forwards;
 }
-.stat-box:nth-child h3 {
-  animation-delay: 0.40s;
+.sub-card img{
+  border-radius: 50%;
 }
 
 
+.sub-card li {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  padding: 2px 2px 2px 2px;
+  gap: 5px;
+  /* position: 1px; */
+}
 
+/* section third section styles */
+.section3{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+    font-family: "Raleway";
+    
+}
+.section3-title{
+  font-weight: bold;
+    font-size: 40px;
+}
+.section3-column{
+    width: 50%;
+}
+.section3 input[type="name"], .section3 input[type="email"], .section3 textarea{
+    height: 60px;
+    border-radius: 5px;
+    background-color: #D6DDED;
+    /* display: block; */
+    width: 100%;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+    /* color: #FFFFFF; */
+    border: none;
+    
+}
+
+.btn-primary {
+  color: white;
+  background-color: #4E47FF;
+  width: 120px;
+  height: 48px;
+  border: 1px solid #4E47FF;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, border 0.3s;
+}
+
+.btn-primary:hover {
+  border: 1px solid #853232;
+  background-color: #853232;
+}
